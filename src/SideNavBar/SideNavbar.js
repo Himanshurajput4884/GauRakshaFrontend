@@ -1,46 +1,72 @@
 import React, { useState } from "react";
 import "./SideNavBar.css";
-import NavBar from "./NavBar";
 
 const SideNavBar = () => {
   const [isExpanded, setExpendState] = useState(false);
   const menuItems = [
     {
-      text: "Dashboard",
-      icon: "icons/grid.svg",
+      text: "Latest News & Updates",
+      icon: "",
     },
     {
-      text: "Admin Profile",
-      icon: "icons/user.svg",
+      text: "FAQ's",
+      icon: "",
     },
     {
-      text: "Messages",
-      icon: "icons/message.svg",
+      text: "About Us",
+      icon: "",
     },
     {
-      text: "Analytics",
-      icon: "icons/pie-chart.svg",
+      text: "Out Activities",
+      icon: "",
     },
     {
-      text: "File Manager",
-      icon: "icons/folder.svg",
+      text: "Benefits of Cow",
+      icon: "",
     },
     {
-      text: "Orders",
-      icon: "icons/shopping-cart.svg",
+      text: "Gallery",
+      icon: "",
     },
     {
-      text: "Saved Items",
-      icon: "icons/heart.svg",
+      text: "Donation",
+      icon: "",
     },
     {
-      text: "Settings",
-      icon: "icons/settings.svg",
+      text: "Shraad",
+      icon: "",
+    },
+    {
+      text: "Event",
+      icon: "",
+    },
+    {
+      text: "Godaan",
+      icon: "",
+    },
+    {
+      text: "Adopt a Cow",
+      icon: "",
+    },
+    {
+      text: "Downloads",
+      icon: "",
+    },
+    {
+      text: "Newsletter",
+      icon: "",
+    },
+    {
+      text: "Blog",
+      icon: "",
+    },
+    {
+      text: "Contact Us",
+      icon: "",
     },
   ];
   return (
     <>
-      <NavBar />
       <div
         className={
           isExpanded
@@ -52,8 +78,8 @@ const SideNavBar = () => {
           <div className="nav-heading">
             {isExpanded && (
               <div className="nav-brand">
-                <img src="icons/Logo.svg" alt="" srcset="" />
-                <h2>Showkart</h2>
+                {/* <img src="icons/Logo.svg" alt="" srcset="" /> */}
+                <h4 style={{margin:"5px 5px", padding:"0px 15px"}}>Gau-Raksha</h4>
               </div>
             )}
             <button
@@ -74,14 +100,15 @@ const SideNavBar = () => {
               <a
                 className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
                 href="#"
+                style={{margin:"0", padding:"0px 10px", alignContent:"center", borderBottomStyle:"1px solid black"}}
               >
-                <img className="menu-item-icon" src={icon} alt="" srcset="" />
-                {isExpanded && <p>{text}</p>}
+                {/* <img className="menu-item-icon" src={icon} alt="" srcset="" /> */}
+                {isExpanded && <p className="menu-item-para">{text}</p>}
               </a>
             ))}
           </div>
         </div>
-        <div className="nav-footer">
+        {/* <div className="nav-footer">
           {isExpanded && (
             <div className="nav-details">
               <img
@@ -102,7 +129,7 @@ const SideNavBar = () => {
             alt=""
             srcset=""
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
