@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./SideNavBar.css";
 
-const SideNavBar = () => {
-  const [isExpanded, setExpendState] = useState(false);
+const SideNavBar = ( {isExpanded, toggleSideNavBar} ) => {
+  // const [isExpanded, setExpendState] = useState(false);
   const menuItems = [
     {
       text: "Latest News & Updates",
@@ -66,29 +66,36 @@ const SideNavBar = () => {
     },
   ];
   return (
-    <>
+    <div>
       <div
         className={
-          isExpanded
-            ? "side-nav-container"
-            : "side-nav-container side-nav-container-NX"
+          // isExpanded
+          //   ? 
+          `side-nav-container ${ isExpanded ? 'expanded' : ''}`
+            // : 
+            // "side-nav-container side-nav-container-NX"
         }
       >
         <div className="nav-upper">
           <div className="nav-heading">
-            {isExpanded && (
+            {/* {isExpanded && */}
+             
               <div className="nav-brand">
                 {/* <img src="icons/Logo.svg" alt="" srcset="" /> */}
                 <h4 style={{margin:"5px 5px", padding:"0px 15px"}}>Gau-Raksha</h4>
               </div>
-            )}
+            
+            {/* } */}
             <button
               className={
-                isExpanded
-                  ? "hamburger hamburger-in"
-                  : "hamburger hamburger-out"
+                // isExpanded
+                  // ? 
+                  "hamburger hamburger-in"
+                  // : 
+                  // "hamburger hamburger-out"
               }
-              onClick={() => setExpendState(!isExpanded)}
+              // onClick={() => setExpendState(!isExpanded)}
+              onClick={toggleSideNavBar}
             >
               <span></span>
               <span></span>
@@ -96,14 +103,21 @@ const SideNavBar = () => {
             </button>
           </div>
           <div className="nav-menu">
-            {menuItems.map(({ text, icon }) => (
+            {menuItems.map(({ text, icon }, index) => (
               <a
-                className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
+                className={
+                  // isExpanded ? 
+                  "menu-item"
+                  //  : 
+                  // "menu-item menu-item-NX"
+                }
                 href="#"
                 style={{margin:"0", padding:"0px 10px", alignContent:"center", borderBottomStyle:"1px solid black"}}
               >
                 {/* <img className="menu-item-icon" src={icon} alt="" srcset="" /> */}
-                {isExpanded && <p className="menu-item-para">{text}</p>}
+                {/* {isExpanded &&  */}
+                <p className="menu-item-para">{text}</p>
+                {/* } */}
               </a>
             ))}
           </div>
@@ -131,7 +145,7 @@ const SideNavBar = () => {
           />
         </div> */}
       </div>
-    </>
+    </div>
   );
 };
 

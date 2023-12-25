@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import cowLogo from "../images/cow_logo.jpg";
 
-const NavBar= () => {
-  const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+const NavBar= ({ isExpanded, toggleSideNavBar }) => {
+  // const [click, setClick] = useState(false);
+
+  // const handleClick = () => setClick(!click);
   return (
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink exact to="/" className="nav-logo">
+          <NavLink exact={true} to="/" className="nav-logo">
+            <img src={cowLogo} alt="cowLogo"/>
             <span> Gau-Raksha </span>
             {/* <i className="fas fa-code"></i> */}
-            <span className="icon">
-              
-            </span>
           </NavLink>
 
           <ul className= "nav_menu">
@@ -30,33 +30,19 @@ const NavBar= () => {
             </li> */}
             <li className="nav-item">
               <NavLink
-                exact
+                exact={true}
                 to="/about"
                 className="nav-links"
               >
                 About
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink
-                exact
-                to="/blog"
-                className="nav-links"
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/contact"
-                className="nav-links"
-              >
-                Contact Us
-              </NavLink>
-            </li> */}
           </ul>
-          
+          <button onClick={toggleSideNavBar} className="side-navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </nav>
     </>
