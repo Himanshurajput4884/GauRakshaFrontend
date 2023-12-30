@@ -3,6 +3,8 @@ import "./NavBar.css";
 import cow_logo from "../../images/Cow_logo2.jpg";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
+import downArrow from "../../images/DownArrow_icon.png";
+
 
 const NavBar = () => {
   const [isVisible1, setIsVisible1] = useState(false);
@@ -93,7 +95,7 @@ const NavBar = () => {
           onMouseEnter={() => handleMouseEnter(1)}
           onMouseLeave={() => handleMouseLeave(1)}
         >
-          Gausala
+          Gausala <img src={downArrow} alt="arrow"/>
            <Dropdown items={forGausala} isVisible={isVisible1}/>
         </div>
         <div
@@ -101,7 +103,7 @@ const NavBar = () => {
           onMouseEnter={() => handleMouseEnter(2)}
           onMouseLeave={() => handleMouseLeave(2)}
         >
-          Activities
+          Activities <img src={downArrow} alt="arrow"/>
           {isVisible2 && <Dropdown items={forActivity} isVisible={isVisible2}/>}
         </div>
         <div
@@ -109,14 +111,18 @@ const NavBar = () => {
           onMouseEnter={() => handleMouseEnter(3)}
           onMouseLeave={() => handleMouseLeave(3)}
         >
-          Projects
+          Projects <img src={downArrow} alt="arrow"/>
           {isVisible3 && <Dropdown items={forProjects} isVisible={isVisible3}/>}
         </div>
         <div className="forNavLink-1">
           <NavLink to="/" className="nav-link"> <span>About Us</span> </NavLink>
         </div>
       </div>
-      <div className="navbar-cont3"></div>
+      <div className="navbar-cont3">
+        <button className="donate-button">
+            Donate
+        </button>
+      </div>
     </div>
   );
 }

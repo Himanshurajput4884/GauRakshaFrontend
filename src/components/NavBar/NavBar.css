@@ -1,5 +1,4 @@
 .navbar-container{
-    border: 2px solid black;
     height: 100px;
     width: 100%;
     display: flex;
@@ -26,9 +25,12 @@
 }
 
 .navbar-cont3{
-    border: 2px solid green;
+    border-left: 3px solid rgb(100, 3, 3);
     flex: 2;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* .cow-logo-container{
@@ -49,6 +51,30 @@
     font-size: larger;
     color: grey;
     cursor: pointer;
+}
+
+.forNavLink-2 img{
+    height: 15px;
+    width: 15px;
+}
+
+.donate-button{
+    height: 50px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(100, 3, 3);
+    background-color: white;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(100, 3, 3);
+    cursor: pointer;
+}
+
+.donate-button:hover{
+    background-color: rgb(100, 3, 3);
+    color: white;
 }
 
 

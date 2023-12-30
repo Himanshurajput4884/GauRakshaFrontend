@@ -4,7 +4,7 @@ import Home from "./components/Home/Home.js";
 import { useState } from 'react';
 import UpperNavBar from './components/NavBar/UpperNavBar.js';
 import NavBar from './components/NavBar/NavBar.js';
-
+import Footer from './components/Footer/Footer.js';
 
 function App() {
   // const [sideNavBarExpanded, setSideNavBarExpanded] = useState(false);
@@ -29,6 +29,7 @@ function App() {
         </Routes>
       </div>
       </div>
+      <Footer/>
     </div>
   );
 }
