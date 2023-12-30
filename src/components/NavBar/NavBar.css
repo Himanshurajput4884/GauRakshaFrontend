@@ -1,0 +1,57 @@
+.navbar-container{
+    border: 2px solid black;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-cont1{
+    /* border: 2px solid green; */
+    flex: 2;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-cont2{
+    flex: 6;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-cont3{
+    border: 2px solid green;
+    flex: 2;
+    height: 60px;
+}
+
+/* .cow-logo-container{
+} */
+
+.cow-logo-container img{
+    height: 70px;
+    width: 110px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: larger;
+    color: grey;
+}
+
+.forNavLink-2{
+    font-size: larger;
+    color: grey;
+    cursor: pointer;
+}
+
+
+
+
+

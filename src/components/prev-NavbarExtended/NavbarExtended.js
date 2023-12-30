@@ -27,7 +27,10 @@ const NavbarExtended = () =>{
                     </div>
                 </div>
                 <div className="inner-container3">
+                    <div className="star">
 
+                    </div>
+                    
                 </div>
             </div>
         </div>
