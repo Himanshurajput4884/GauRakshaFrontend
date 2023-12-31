@@ -67,6 +67,37 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="home-section-4">
+          <div className="section4-head1">
+            No living creature on this planet calls it's mother
+          </div>
+          <div className="section4-head2">
+            "MAA"
+          </div>
+          <div className="section4-head1">
+            except a calf (a baby cow) and a human being
+          </div>
+      </div>
+      <div className="home-section-5">
+        <div className="section5-container">
+          <div className="section5-inner-box">
+            <div className="inner-upper-box">300+</div>
+            <div className="inner-lower-box">Gaumatas</div>
+          </div>
+          <div className="section5-inner-box">
+          <div className="inner-upper-box">5+</div>
+            <div className="inner-lower-box">Activites</div>
+          </div>
+          <div className="section5-inner-box">
+          <div className="inner-upper-box">70+</div>
+            <div className="inner-lower-box">Gopalak</div>
+          </div>
+          <div className="section5-inner-box">
+          <div className="inner-upper-box">8 Acre</div>
+            <div className="inner-lower-box">Area of Gaushala</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

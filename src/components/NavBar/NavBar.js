@@ -28,15 +28,15 @@ const NavBar = () => {
 
   const forActivity = [
     {
-      title: "Upcoming Activity",
+      title: "Donate",
       path: "#",
     },
     {
-      title: "Activity-2",
-      path: "#",
+      title: "Sponsor",
+      path: "/involve/sponsor",
     },
     {
-      title: "Activity-3",
+      title: "Adopt",
       path: "#",
     },
   ];
@@ -103,7 +103,7 @@ const NavBar = () => {
           onMouseEnter={() => handleMouseEnter(2)}
           onMouseLeave={() => handleMouseLeave(2)}
         >
-          Activities <img src={downArrow} alt="arrow"/>
+          Get Involved <img src={downArrow} alt="arrow"/>
           {isVisible2 && <Dropdown items={forActivity} isVisible={isVisible2}/>}
         </div>
         <div
