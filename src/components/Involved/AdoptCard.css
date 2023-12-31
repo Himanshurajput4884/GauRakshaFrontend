@@ -1,0 +1,50 @@
+
+.adopt-card-container{
+    border: 3px solid rgb(243, 195, 195);
+    height: 400px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 30px 20px 20px 20px;
+    margin: 10px 10px;
+}
+
+.adopt-card-Image{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.adopt-card-Image img{
+    height: 150px;
+    width: 350px;
+}
+.adopt-card-content{
+    width: 100%;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+.adopt-card-name{
+    flex:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    border-bottom: 1px solid grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.adopt-card-description{
+    flex: 4;
+    display: flex;
+    text-align: justify;
+    font-size: medium;
+    align-items: center;
+    color: rgb(90, 88, 88);
+    padding: 10px 10px;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+

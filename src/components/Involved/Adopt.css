@@ -1,7 +1,7 @@
 
-.sponsor-section1{
+.adopt-section1{
     height: 400px;
-    background-image: url("../../images/SponsorCowImage1.jpg");
+    background-image: url("../../images/AdoptCowImage1.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.sponsor-heading{
+.adopt-heading{
     height: 20%;
     width: 100%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -22,7 +22,7 @@
     font-weight: bolder;
 }
 
-.sponsor-section2{
+.adopt-section2{
     width: 100%;
     height: 200px;
     display: flex;
@@ -30,7 +30,7 @@
     align-items: center;
 }
 
-.sponsor-desc{
+.adopt-desc{
     width: 80%;
     height: 40%;
     font-size: 24px;
@@ -39,14 +39,14 @@
     font-weight: 600;
 }
 
-.sponsor-section3{
+.adopt-section3{
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-.sponsor-section3-content {
+.adopt-section3-content {
     width: 85%;
     height: auto;
     padding: 20px 0;
@@ -55,8 +55,8 @@
     flex-wrap: wrap; 
   }
   
-  .sponsor-for-cards {
-    width: 280px;
+  .adopt-for-cards {
+    width: 500px;
     height: auto;
     display: flex;
     justify-content: center;

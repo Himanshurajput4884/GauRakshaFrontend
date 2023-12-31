@@ -13,24 +13,24 @@ const SponsorCard = ({item})=>{
     // };
 
     return(
-        <div className="card-container">
-            <div className="forImage">
+        <div className="sponsor-card-container">
+            <div className="sponsor-card-Image">
                 <img src="" alt=""/>
             </div>
-            <div className="card-content">
-                <div className="card-name">
+            <div className="sponsor-card-content">
+                <div className="sponsor-card-name">
                     {item.name}
                 </div>
-                <div className="card-desc"> {item.about} </div>
-                <div className="card-price-container">
-                    <div className="card-price"> {item.price}/- </div>
+                <div className="sponsor-card-description"> {item.about} </div>
+                <div className="sponsor-card-price-container">
+                    <div className="sponsor-card-price"> {item.price}/- </div>
                     <div className="pricePerAmount"> Per {item.perAmount} </div>
                 </div>
-                <div className="forButton">
-                    <div className="wholeButton">
-                        <div className="forChange"> - </div>
-                        <div className="forChange"> {item.buyed}</div>
-                        <div className="forChange"> + </div>
+                <div className="sponsor-for-button">
+                    <div className="sponsor-whole-button">
+                        <div className="sponsor-for-change"> - </div>
+                        <div className="sponsor-for-change"> {item.buyed}</div>
+                        <div className="sponsor-for-change"> + </div>
                     </div>
                 </div>
             </div>

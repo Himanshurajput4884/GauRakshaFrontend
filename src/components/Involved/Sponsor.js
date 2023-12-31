@@ -81,10 +81,10 @@ const Sponsor = () => {
         </div>
       </div>
       <div className="sponsor-section3">
-        <div className="section3-content">
+        <div className="sponsor-section3-content">
             {
                 items.map((value, index)=>(
-                    <div key={index} className="forCards"> 
+                    <div key={index} className="sponsor-for-cards"> 
                         <SponsorCard item={value}/>
                     </div>
                 ))

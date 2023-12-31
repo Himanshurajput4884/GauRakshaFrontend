@@ -6,6 +6,7 @@ import UpperNavBar from './components/NavBar/UpperNavBar.js';
 import NavBar from './components/NavBar/NavBar.js';
 import Footer from './components/Footer/Footer.js';
 import Sponsor from './components/Involved/Sponsor.js';
+import Adopt from './components/Involved/Adopt.js';
 
 function App() {
   // const [sideNavBarExpanded, setSideNavBarExpanded] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/involve/sponsor' element={<Sponsor />} />
+          <Route path='/involve/adopt' element={<Adopt />} />
         </Routes>
       </div>
       </div>

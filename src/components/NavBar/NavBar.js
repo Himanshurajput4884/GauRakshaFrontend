@@ -37,7 +37,7 @@ const NavBar = () => {
     },
     {
       title: "Adopt",
-      path: "#",
+      path: "/involve/adopt",
     },
   ];
 
