@@ -7,6 +7,8 @@ import NavBar from './components/NavBar/NavBar.js';
 import Footer from './components/Footer/Footer.js';
 import Sponsor from './components/Involved/Sponsor.js';
 import Adopt from './components/Involved/Adopt.js';
+import Gallery from './components/Gallery/Gallery.js';
+import ContactUs from './components/ContactUs/ContactUs.js';
 
 function App() {
   // const [sideNavBarExpanded, setSideNavBarExpanded] = useState(false);
@@ -30,6 +32,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/involve/sponsor' element={<Sponsor />} />
           <Route path='/involve/adopt' element={<Adopt />} />
+          <Route path='/show/gallery' element={<Gallery />} />
+          <Route path='/overview/contact-us' element={<ContactUs />} />
         </Routes>
       </div>
       </div>

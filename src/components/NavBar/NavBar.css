@@ -70,6 +70,7 @@
     font-size: large;
     color: rgb(100, 3, 3);
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .donate-button:hover{

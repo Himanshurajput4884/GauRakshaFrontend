@@ -1,0 +1,91 @@
+.contact-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-image-container{
+    background-image: url("../../images/ContactImage1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image-title{
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(68, 67, 67);
+}
+
+
+.contact-section2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 40px;
+    justify-content: space-evenly;
+}
+
+.contact-subcontainer{
+    height: 180px;
+    width: 30%;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.contact-inner-cont1{
+    flex: 2;
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    align-items: center;
+    color: rgb(73, 66, 66);
+}
+.contact-inner-cont2{
+    flex: 4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.contact-address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(105, 103, 103);
+    font-size: 20px;
+}
+
+.contact-section3{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.contact-map{
+    border: 2px solid red;
+    height: 280px;
+    width: 60%;
+}
+
+.leaflet-container{
+    width: 80%;
+    height: 200px;
+    border: 2px solid rgb(153, 140, 140);
+    border-radius: 20px;
+}

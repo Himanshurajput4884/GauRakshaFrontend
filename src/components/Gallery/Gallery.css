@@ -1,0 +1,65 @@
+
+.gallery-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image1{
+    background-image: url("../../images/GalleryCowImage1.jpg");
+    background-position: 0cm;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image-title{
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(66, 30, 30);
+}
+
+.gallery-text-content{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.gallery-description{
+    color: rgb(95, 91, 91);
+    font-size: 21px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: justify;
+}
+.gallery-images{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    justify-content: center;
+}
+
+.gallery-image-border{
+    height: auto;
+    width: 30%;
+    /* border: 2px solid red; */
+    padding: 4px 4px;
+    margin: 6px 6px;
+}
+
+.gallery-image-border img{
+    height: 200px;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+

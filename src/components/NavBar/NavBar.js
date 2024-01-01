@@ -18,7 +18,11 @@ const NavBar = () => {
     },
     {
       title: "Visit us",
-      path: "/visit-us",
+      path: "/overview/contact-us",
+    },
+    {
+      title: "About us",
+      path: "/overview/about-us",
     },
     {
       title: "Cow Helpline",
@@ -88,7 +92,7 @@ const NavBar = () => {
           <NavLink to="/" className="nav-link"> <span>Home</span> </NavLink>
         </div>
         <div className="forNavlink-1">
-          <NavLink to="/gallery" className="nav-link"> <span>Gallery</span> </NavLink>
+          <NavLink to="/show/gallery" className="nav-link"> <span>Gallery</span> </NavLink>
         </div>
         <div
           className="forNavLink-2"
@@ -115,7 +119,7 @@ const NavBar = () => {
           {isVisible3 && <Dropdown items={forProjects} isVisible={isVisible3}/>}
         </div>
         <div className="forNavLink-1">
-          <NavLink to="/" className="nav-link"> <span>About Us</span> </NavLink>
+          <NavLink to="/overview/contact-us" className="nav-link"> <span> Contact Us </span> </NavLink>
         </div>
       </div>
       <div className="navbar-cont3">

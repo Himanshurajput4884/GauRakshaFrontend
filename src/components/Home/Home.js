@@ -4,6 +4,7 @@ import CowImage1 from "../../images/CowImage1.jpg";
 import donationIcon from "../../images/Donation_icon.png";
 import adoptIcon from "../../images/Adopt_icon.png";
 import sponsorIcon from "../../images/Sponsor_icon.png";
+import { NavLink } from "react-router-dom";
 
 
 const Home = () => {
@@ -50,7 +51,7 @@ const Home = () => {
             <div className="card-heading"> Sponsor </div>
             <div className="card-subheading"> Sponsor a cow at our shelter </div>
             <div className="card-desc">The sponsorship will go towards the care of the animal and regular updates for the same will be provided to you.</div>
-            <div className="card-button"><button> Sponsor now </button></div>
+            <div className="card-button"><NavLink to="/involve/sponsor" exact><button> Sponsor now </button></NavLink></div>
           </div>
         </div>
         <div className="home-section-outercard">
@@ -63,7 +64,7 @@ const Home = () => {
             <div className="card-heading"> Adopt </div>
             <div className="card-subheading"> Take home a new family member </div>
             <div className="card-desc">Nothing brings more joy and satisfaction than to provide a forever home to one of our little wards.</div>
-            <div className="card-button"><button> Adopt now </button></div>
+            <div className="card-button"><NavLink to="/involve/adopt"><button> Adopt now </button></NavLink></div>
           </div>
         </div>
       </div>
