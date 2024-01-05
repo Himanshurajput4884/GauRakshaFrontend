@@ -17,6 +17,7 @@
 }
 
 .contact-image-title{
+    font-weight: 700;
     font-size: 70px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(68, 67, 67);
@@ -81,11 +82,4 @@
     border: 2px solid red;
     height: 280px;
     width: 60%;
-}
-
-.leaflet-container{
-    width: 80%;
-    height: 200px;
-    border: 2px solid rgb(153, 140, 140);
-    border-radius: 20px;
 }

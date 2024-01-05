@@ -1,11 +1,16 @@
 import React from "react";
 import "./ContactUs.css";
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
+import { useJsApiLoader, GoogleMap } from "@react-google-maps/api";
+
 
 const ContactUs = () => {
-  const latti = 28.557,
-    longi = 77.2763;
-  const position = [latti, longi];
+
+  const lat = 28.5570,
+    lng = 77.2763;
+  const position = {
+    lat:lat,
+    lng:lng,
+  };
   return (
     <div className="contact-container">
       <div className="contact-image-container">
@@ -35,19 +40,9 @@ const ContactUs = () => {
       </div>
       <div className="contact-section3">
         <div className="contact-map">
-          <MapContainer center={position} zoom={13} scrollWheelZoom={false}>
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              crossOrigin={true}
-              onError={(e) => {
-                console.error("Error loading map tiles:", e);
-                // Implement fallback logic here
-              }}
-            />
+          <div style={{ height: "280px", width: "100%" }}>
 
-            {/* <Marker position={position}></Marker> */}
-          </MapContainer>
+          </div>
         </div>
       </div>
     </div>
