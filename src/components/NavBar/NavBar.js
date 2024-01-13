@@ -123,9 +123,11 @@ const NavBar = () => {
         </div>
       </div>
       <div className="navbar-cont3">
-        <button className="donate-button">
+      <NavLink to="/involve/donate" className="nav-link">
+      <button className="donate-button">
             Donate
-        </button>
+        </button> 
+       </NavLink>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutUs.css";
 import CowImage1 from "../../images/AboutUsCowImage1.jpg";
+import CowImage2 from "../../images/AboutUsCowImage2.jpg";
 
 const AboutUs = () => {
   return (
@@ -48,7 +49,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="about-us-cont1-image">
-            <img src={CowImage1} alt="cowImage" />
+            <img src={CowImage2} alt="cowImage" />
           </div>
         </div>
       </div>

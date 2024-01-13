@@ -1,0 +1,50 @@
+.donate-container{
+    height: auto;
+    width: 100%;
+}
+
+.donate-section2{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-cont1{
+    height: 400px;
+    border: 2px solid black;
+    width: 60%;
+}
+
+.donate-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-choice-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.donate-amount-btn{
+    cursor: pointer;
+    height: 20px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.donate-submit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.donate-submit-btn button{
+    cursor: pointer;
+}
