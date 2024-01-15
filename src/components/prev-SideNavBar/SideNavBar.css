@@ -6,7 +6,7 @@
 	height: 100vh;
 	position: fixed;
 	color: rgb(255,255,255);
-
+	top: 0;
 	right: -300px;
 	transition: right 0.4s;
 }

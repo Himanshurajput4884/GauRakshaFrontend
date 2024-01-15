@@ -6,13 +6,15 @@
 }
 
 .home-section-2{
-    height: 240px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 40px 10px;
 }
 
 .section2-desc{
+    padding: 10px 0 20px 0;
     flex: 3;
     display: flex;
     align-items:center;
@@ -22,13 +24,14 @@
 .actual-desc{
     font-size: x-large;
     font-weight: bold;
-    height: 100px;
+    height: auto;
     width: 80%;
     text-align:justify;
     color: rgb(48, 47, 47);
 }
 
 .section2-smallDesc{
+    padding: 10px 0 60px 0;
     flex: 1;
     display: flex; 
     justify-content: center;
@@ -45,7 +48,7 @@
 
 .home-section-3{
     width: 100%;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -53,7 +56,7 @@
 }
 
 .home-section-outercard{
-    width: 23%;
+    width: 30%;
     height: 300px;
     border: 3px solid rgb(236, 190, 190);
     display: flex;
@@ -229,4 +232,88 @@
     justify-content: center;
     align-items: baseline;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+@media (max-width:1000px){
+    .imageContainer img{
+        height: 350px;
+    }
+}
+
+@media (max-width:600px){
+    .imageContainer img{
+        height: 250px;
+    }
+    .actual-desc{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .smallTalk-Desc{
+        font-size: 14px;
+        font-weight: 300;
+        color: grey;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1100px){
+    .card-button button{
+        height: 30px;
+        width: 120px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .inner-upper-box{
+        font-size: 45px;
+    }
+    .inner-lower-box{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:800px){
+    .home-section-3{
+        flex-wrap: none;
+        flex-direction: column;
+    }
+    .home-section-outercard{
+        width: 70%;
+        padding: 130px 0 130px 0;
+        border: 2px solid black;
+        margin: 0 0 70px 0;
+    }
+    .inner-upper-box{
+        font-size: 35px;
+    }
+    .inner-lower-box{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:450px){
+    .home-section-4{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 50px 0;
+    }
+    
+    .section4-head1{
+        font-size: 16px;
+    }
+    .section4-head2{
+        font-size: 40px;
+    }
+    .inner-upper-box{
+        font-size: 24px;
+    }
+    .inner-lower-box{
+        font-size: 8px;
+    }
 }

@@ -30,10 +30,10 @@ const Footer = () => {
         <div className="footer-cont2">
             <div className="quick-links"> Quick-Links </div>
             <div className="actual-links">
-                <span> <a href="#">Link1</a> </span>
-                <span> <a href="#">Link2</a> </span>
-                <span> <a href="#">Link3</a> </span>
-                <span> <a href="#">Link4</a> </span>
+                <span> <a href="#">Donate</a> </span>
+                <span> <a href="#">Activity</a> </span>
+                <span> <a href="#">Adopt</a> </span>
+                <span> <a href="#">About-Us</a> </span>
                 <span> <a href="#">Link5</a> </span>
             </div>
         </div>

@@ -41,7 +41,7 @@ const Home = () => {
             <div className="card-button"><NavLink to="/involve/donate" exact><button> Donate now </button></NavLink></div>
           </div>
         </div>
-        <div className="home-section-outercard">
+        {/* <div className="home-section-outercard">
           <div className="home-section-innercard">
             <div className="card-icon">
               <div className="inner-card-icon">
@@ -53,7 +53,7 @@ const Home = () => {
             <div className="card-desc">The sponsorship will go towards the care of the animal and regular updates for the same will be provided to you.</div>
             <div className="card-button"><NavLink to="/involve/sponsor" exact><button> Sponsor now </button></NavLink></div>
           </div>
-        </div>
+        </div> */}
         <div className="home-section-outercard">
           <div className="home-section-innercard">
             <div className="card-icon">

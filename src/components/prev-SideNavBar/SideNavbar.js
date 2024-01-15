@@ -5,64 +5,32 @@ const SideNavBar = ( {isExpanded, toggleSideNavBar} ) => {
   // const [isExpanded, setExpendState] = useState(false);
   const menuItems = [
     {
-      text: "Latest News & Updates",
-      icon: "",
-    },
-    {
-      text: "FAQ's",
-      icon: "",
-    },
-    {
-      text: "About Us",
-      icon: "",
-    },
-    {
-      text: "Out Activities",
-      icon: "",
-    },
-    {
-      text: "Benefits of Cow",
-      icon: "",
+      text: "Home",
+      link: "/",
     },
     {
       text: "Gallery",
-      icon: "",
+      link: "/show/gallery",
     },
     {
-      text: "Donation",
-      icon: "",
+      text: "Activities",
+      link: "/overview/activity",
     },
     {
-      text: "Shraad",
-      icon: "",
+      text: "About Us",
+      link: "/overview/about-us",
     },
     {
-      text: "Event",
-      icon: "",
+      text: "Donate",
+      link: "/involve/donate",
     },
     {
-      text: "Godaan",
-      icon: "",
-    },
-    {
-      text: "Adopt a Cow",
-      icon: "",
-    },
-    {
-      text: "Downloads",
-      icon: "",
-    },
-    {
-      text: "Newsletter",
-      icon: "",
-    },
-    {
-      text: "Blog",
-      icon: "",
+      text: "Adopt",
+      link: "/involve/adopt",
     },
     {
       text: "Contact Us",
-      icon: "",
+      link: "/overview/contact-us",
     },
   ];
   return (
@@ -103,7 +71,7 @@ const SideNavBar = ( {isExpanded, toggleSideNavBar} ) => {
             </button>
           </div>
           <div className="nav-menu">
-            {menuItems.map(({ text, icon }, index) => (
+            {menuItems.map((tt, index) => (
               <a
                 className={
                   // isExpanded ? 
@@ -111,12 +79,12 @@ const SideNavBar = ( {isExpanded, toggleSideNavBar} ) => {
                   //  : 
                   // "menu-item menu-item-NX"
                 }
-                href="#"
+                href={tt.link}
                 style={{margin:"0", padding:"0px 10px", alignContent:"center", borderBottomStyle:"1px solid black"}}
               >
                 {/* <img className="menu-item-icon" src={icon} alt="" srcset="" /> */}
                 {/* {isExpanded &&  */}
-                <p className="menu-item-para">{text}</p>
+                <p className="menu-item-para">{tt.text}</p>
                 {/* } */}
               </a>
             ))}

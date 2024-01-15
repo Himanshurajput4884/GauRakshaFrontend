@@ -6,15 +6,15 @@ import Dropdown from "./Dropdown";
 import downArrow from "../../images/DownArrow_icon.png";
 
 
-const NavBar = () => {
+const NavBar = ({toggleSideNavBar}) => {
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isVisible3, setIsVisible3] = useState(false);
 
   const forGausala = [
     {
-      title: "Overview",
-      path: "/overview",
+      title: "Acitivities",
+      path: "/overview/activity",
     },
     {
       title: "Visit us",
@@ -33,12 +33,12 @@ const NavBar = () => {
   const forActivity = [
     {
       title: "Donate",
-      path: "#",
+      path: "/involve/donate",
     },
-    {
-      title: "Sponsor",
-      path: "/involve/sponsor",
-    },
+    // {
+    //   title: "Sponsor",
+    //   path: "/involve/sponsor",
+    // },
     {
       title: "Adopt",
       path: "/involve/adopt",
@@ -128,6 +128,13 @@ const NavBar = () => {
             Donate
         </button> 
        </NavLink>
+      </div>
+      <div className="navbar-cont4">
+      <button onClick={toggleSideNavBar} className="side-navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
       </div>
     </div>
   );

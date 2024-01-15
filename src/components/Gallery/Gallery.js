@@ -1,26 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Gallery.css";
-import AdoptCow from "../../images/AdoptCowImage1.jpg";
+import axios from "axios";
 
 const Gallery = () => {
+  const [imageData, setImageData] = useState([]);
 
-    const items= [
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-        {url:AdoptCow},
-    ]
+  useEffect(() => {
+    const getImageData = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:8008/gallery/show/all`
+        );
+        if (
+          response.status === 200 &&
+          response.data.message === "Fetch All Image"
+        ) {
+          setImageData(response.data.galleryImages);
+        }
+      } catch (err) {
+        console.log("Error in fetching image: ", err);
+      }
+    };
+    getImageData();
+  }, []);
+
 
   return (
     <div className="gallery-container">
@@ -38,13 +41,11 @@ const Gallery = () => {
         </div>
       </div>
       <div className="gallery-images">
-        {
-            items.map((value, index)=>(
-                <div className="gallery-image-border">
-                    <img src={value.url} alt={"pic"+index}/>
-                </div>
-            ))
-        }
+        {imageData.map((image, index) => (
+          <div className="gallery-image-border">
+            <img src={image.imageUrl} alt={"pic" + index} />
+          </div>
+        ))}
       </div>
     </div>
   );

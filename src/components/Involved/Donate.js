@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Donate.css";
+import {ToastContainer, toast} from "react-toastify";
 import axios from "axios";
 const Donate = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,9 @@ const Donate = () => {
 
   const handleSubmitFormProceed = async () => {
     if (!formData.inputAmount) {
-      alert("Enter the amount");
+      toast.error("Fill all field.", {
+        position:"top-center",
+      })
       return;
     }
     try {
@@ -69,13 +72,16 @@ const Donate = () => {
 
   return (
     <div className="donate-container">
-      <div className="sponsor-section1">
-        <div className="sponsor-heading"> Donate </div>
+      <ToastContainer/>
+      <div className="donate-section1">
+        <div className="donate-heading"> Donate </div>
       </div>
       <div className="donate-section2">
         <div className="donate-cont1">
           <div className="donate-form">
-            <label htmlFor="Choose an amount"> Choose an amount </label>
+            <div className="donate-form-heading">
+              You can Choose these amounts or can add manually.
+            </div>
             <div className="donate-choice-btns">
               <button
                 className="donate-amount-btn"
@@ -110,6 +116,23 @@ const Donate = () => {
             <div className="donate-submit-btn">
               <button onClick={handleSubmitFormProceed}> Proceed </button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="donate-section3">
+        <div className="donate-section3-inner">
+          <div className="donate-section3-heading">
+            You can donate via Cheque / Demand Draft / Bank Transfers 
+          </div>
+          <div className="donate-section3-details">
+            <span>Bank Details:</span>
+            <span>Beneficiary: </span>
+            <span>Bank: </span>
+            <span>Branch: </span>
+            <span>Branch Code: </span>
+            <span>Savings Account no: </span>
+            <span>IFSC Code: </span>
+            <span></span>
           </div>
         </div>
       </div>

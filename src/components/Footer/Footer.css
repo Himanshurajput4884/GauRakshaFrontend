@@ -1,5 +1,5 @@
 .footer-container{
-    height: 400px;
+    height: auto;
     width: 100%;
     background-color: #141010;
     display: flex;
@@ -14,12 +14,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex: 9;
+    padding: 40px 20px;
     border-bottom: 2px solid grey;
 }
 
 .footer2{
-    flex: 1;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -27,6 +26,7 @@
     font-size:medium;
     font-weight: 600;
     color: white;
+    padding: 20px 20px;
 }
 
 .footer-cont1{
@@ -45,10 +45,12 @@
     width: 180px;
 }
 .footer-des{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 10px 40px;
-    font-size: large;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 300;
     flex: 3;
+    text-align: justify;
     color: white;
 }
 
@@ -104,32 +106,38 @@
     flex-direction: column;
 }
 .quick-links{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     flex: 2;
     display: flex;
     align-items: center;
     justify-content: left;
     padding: 0 0 0 20px;
     font-size: x-large;
-    font-weight: bold;
+    font-weight: 600;
     color: white;
 }
 .actual-links{
     flex: 6;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: top;
     padding: 0 0 0 30px;
+}
+
+.actual-links span{
+    padding: 4px 4px;
+    margin: 4px 0;
 }
 
 .actual-links a{
     text-decoration: none;
-    font-size: large;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 300;
     color: white;
 }
 
 .actual-links a:hover{
-    color: rgb(214, 79, 79);
+    color: rgb(227, 142, 142);
 }
 
 .footer-cont3{
@@ -174,8 +182,8 @@
 }
 .forAddress span{
     color: white;
-    font-size: large;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 300;
     margin: 0 0 8px 0;
 }
 .actual-address img{
@@ -190,8 +198,8 @@
     flex: 1;
     display: flex;
     color: white;
-    font-size: large;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 300;
     text-decoration: none;
     /* border: 2px solid white; */
     padding: 0 0 0 20px;
@@ -209,8 +217,8 @@
     flex: 1;
     display: flex;
     color: white;
-    font-size: large;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 300;
     text-decoration: none;
     /* border: 2px solid white; */
     padding: 2px 20px;
@@ -222,4 +230,47 @@
     filter: invert(100%);
     transition: filter 0.3s ease;
     margin: 0 10px 0 0; 
+}
+
+@media (max-width: 1000px){
+    .footer-logo img{
+        height: 90px;
+        width: 140px;
+    }
+}
+
+@media (max-width:800px){
+    .footer1{
+        flex-direction: column;
+    }
+    .footer-logo img{
+        height: 130px;
+        width: 240px;
+    }
+    .footer-des{
+        padding: 20px 0;
+    }
+    .footer-logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 0 0;
+    }
+    .footer-cont1{
+        padding: 20px 0;
+    }
+    .footer-cont2{
+        padding: 20px 0;
+    }
+    .footer-cont3{
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 400px){
+    .footer2{
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
