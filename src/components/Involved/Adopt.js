@@ -1,41 +1,42 @@
 import React from "react";
 import "./Adopt.css";
 import AdoptCard from "./AdoptCard.js";
+import image from "../../images/activityImage1.jpg";
 
 const Adopt = () => {
     const items = [
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },
         {
-            url:"",
+            url:image,
             name:"Gauri",
             about:"Gauri, a gentle and cherished member of our herd, embodies grace and tranquility. Her warm, expressive eyes reflect a serene demeanor, symbolizing the compassion and strength inherent in every cow. Gauri's presence is a testament to the nurturing bond we share with these majestic beings at our care center.",
         },

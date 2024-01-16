@@ -89,10 +89,10 @@ const NavBar = ({toggleSideNavBar}) => {
       </div>
       <div className="navbar-cont2">
         <div className="forNavlink-1">
-          <NavLink to="/" className="nav-link"> <span>Home</span> </NavLink>
+          <NavLink to="/" className="nav-link" > <span>Home</span> </NavLink>
         </div>
         <div className="forNavlink-1">
-          <NavLink to="/show/gallery" className="nav-link"> <span>Gallery</span> </NavLink>
+          <NavLink to="/show/gallery" className="nav-link" > <span>Gallery</span> </NavLink>
         </div>
         <div
           className="forNavLink-2"
@@ -123,7 +123,7 @@ const NavBar = ({toggleSideNavBar}) => {
         </div>
       </div>
       <div className="navbar-cont3">
-      <NavLink to="/involve/donate" className="nav-link">
+      <NavLink to="/involve/donate" className="nav-link" >
       <button className="donate-button">
             Donate
         </button> 

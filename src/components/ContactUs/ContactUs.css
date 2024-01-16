@@ -70,7 +70,8 @@
 }
 
 .contact-section3{
-    height: 500px;
+    height: auto;
+    padding: 40px 10px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -93,4 +94,52 @@
 .contact-map{
     height: 400px;
     width: 60%;
+}
+
+
+@media(max-width:1000px){
+    .contact-map{
+        height: 400px;
+        width: 80%;
+    }
+    .contact-inner-cont1{
+        font-size: 30px;
+    }
+    .contact-address{
+        font-size: 15px;
+    }
+}
+@media(max-width:750px){
+    .contact-map{
+        width: 95%;
+    }
+    .contact-inner-cont1{
+        font-size: 22px;
+    }
+    .contact-address{
+        font-size: 13px;
+    }
+    .map-heading{
+        height: 30px;
+        font-size: 20px;
+    }
+    .contact-subcontainer{
+        width: 40%;
+    }
+    .contact-image-title{
+        font-weight: 400;
+        font-size: 45px;;
+    }
+}
+
+@media (max-width:500px){
+    .contact-section2{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: none;
+    }
+    .contact-subcontainer{
+        width: 70%;
+    }
 }

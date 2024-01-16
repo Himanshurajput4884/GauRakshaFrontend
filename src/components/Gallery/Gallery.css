@@ -27,7 +27,8 @@
 
 .gallery-text-content{
     width: 90%;
-    height: 150px;
+    height: auto;
+    padding: 30px 10px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -66,3 +67,23 @@
 }
 
 
+
+@media(max-width:1200px){
+    .gallery-image-border{
+        width: 45%;
+    }
+}
+
+@media (max-width:700px){
+    .gallery-images{
+        flex-direction: column;
+        flex-wrap: none;
+        align-items: center;
+    }
+    .gallery-image-border{
+        width: 85%;
+    }
+    .gallery-image-border img{
+        height: 275px;
+    }
+}

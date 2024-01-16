@@ -7,7 +7,7 @@ const AdoptCard = ({item})=>{
     return(
         <div className="adopt-card-container">
             <div className="adopt-card-Image">
-                <img src="" alt=""/>
+                <img src={item.url} alt=""/>
             </div>
             <div className="adopt-card-content">
                 <div className="adopt-card-name">

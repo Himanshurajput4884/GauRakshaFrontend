@@ -73,6 +73,7 @@ const SideNavBar = ( {isExpanded, toggleSideNavBar} ) => {
           <div className="nav-menu">
             {menuItems.map((tt, index) => (
               <a
+                key={index}
                 className={
                   // isExpanded ? 
                   "menu-item"

@@ -1,5 +1,6 @@
 
 .adopt-section1{
+    width: 100%;
     height: 400px;
     background-image: url("../../images/AdoptCowImage1.jpg");
     background-position: center;
@@ -24,15 +25,17 @@
 
 .adopt-section2{
     width: 100%;
-    height: 200px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px 0;
 }
 
 .adopt-desc{
     width: 80%;
-    height: 40%;
+    text-align: justify;
+    height: auto;
     font-size: 24px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(123, 116, 131);
@@ -62,5 +65,21 @@
     justify-content: center;
     align-items: center;
     margin: 10px; 
-  }
+}
+
+@media(max-width:500px){
+    .adopt-section1{
+        height: 300px;
+    }
+    .adopt-heading{
+        font-size: 40px;
+        font-weight: 600;
+    }   
+    .adopt-section3-content {
+        width: 92%;
+      }
+      .adopt-desc{
+        font-size: 16px;
+    }
+}
   

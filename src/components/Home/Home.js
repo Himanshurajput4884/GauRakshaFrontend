@@ -38,7 +38,7 @@ const Home = () => {
             <div className="card-heading"> Make Donation </div>
             <div className="card-subheading"> Help us by making a donation </div>
             <div className="card-desc">Donate generously so we can take care of our animal friends through our various initiatives and rescues.</div>
-            <div className="card-button"><NavLink to="/involve/donate" exact><button> Donate now </button></NavLink></div>
+            <div className="card-button"><NavLink to="/involve/donate" ><button> Donate now </button></NavLink></div>
           </div>
         </div>
         {/* <div className="home-section-outercard">
