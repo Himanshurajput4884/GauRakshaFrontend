@@ -8,6 +8,8 @@ import locationIcon from "../../images/Location_icons.png";
 import PhoneIcon from "../../images/Phone1_icon.png";
 import GmailIcon from "../../images/Gmail1_icon.png";
 
+const URL = `https://gaushala-backend.onrender.com`;
+
 const Footer = () => {
   return (
     <div className="footer-container">

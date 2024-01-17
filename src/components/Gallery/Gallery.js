@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Gallery.css";
 import axios from "axios";
 
+const URL = `https://gaushala-backend.onrender.com`;
+
 const Gallery = () => {
   const [imageData, setImageData] = useState([]);
 
@@ -9,7 +11,7 @@ const Gallery = () => {
     const getImageData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8008/gallery/show/all`
+          `${URL}/gallery/show/all`
         );
         if (
           response.status === 200 &&

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Donate.css";
 import {ToastContainer, toast} from "react-toastify";
 import axios from "axios";
+const URL = `https://gaushala-backend.onrender.com`;
+
 const Donate = () => {
   const [formData, setFormData] = useState({
     inputAmount: 0,
@@ -28,11 +30,11 @@ const Donate = () => {
       const amount = formData.inputAmount;
       const {
         data: { key },
-      } = await axios.get("http://localhost:8008/payment/getkey");
+      } = await axios.get(`${URL}/payment/getkey`);
 
       const {
         data: { order },
-      } = await axios.post("http://localhost:8008/payment/checkout", {
+      } = await axios.post(`${URL}/payment/checkout`, {
         amount,
       });
 
@@ -45,7 +47,7 @@ const Donate = () => {
         description:"Now for testing",
         image:"",
         order_id:order.id,
-        callback_url:"http://localhost:8008/payment/paymentverification",
+        callback_url:`${URL}/payment/paymentverification`,
         prefill:{
           name:"Himanshu",
           email:"himanshu@example.com",

@@ -13,6 +13,8 @@ import Donate from './components/Involved/Donate.js';
 import Activities from './components/Activities/Activities.js';
 import SideNavBar from "./components/prev-SideNavBar/SideNavbar.js";
 
+const URL = `https://gaushala-backend.onrender.com/`;
+
 function App() {
   const [sideNavBarExpanded, setSideNavBarExpanded] = useState(false);
 

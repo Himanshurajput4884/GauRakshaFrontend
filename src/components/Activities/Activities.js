@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./Activities.css";
 import axios from "axios";
 
+const URL = `https://gaushala-backend.onrender.com`;
+
 const Activities = () => {
     const [blogData, setBlogData] = useState([]);
 
     useEffect(()=>{
         const getBlogData = async()=>{
             try{
-                const response = await axios.get(`http://localhost:8008/activity/show/all`);
+                const response = await axios.get(`${URL}/activity/show/all`);
                 if(response.status === 200 && (response.data.message === "Fetch All blogs")){
                     setBlogData(response.data.blogs);
                 }
