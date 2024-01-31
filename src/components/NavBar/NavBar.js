@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import cow_logo from "../../images/Cow_logo2.jpg";
+import cow_logo from "../../images/Cow_logo2.jpeg";
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import downArrow from "../../images/DownArrow_icon.png";
@@ -24,10 +24,10 @@ const NavBar = ({toggleSideNavBar}) => {
       title: "About us",
       path: "/overview/about-us",
     },
-    {
-      title: "Cow Helpline",
-      path: "/cow-helpine",
-    },
+    // {
+    //   title: "Cow Helpline",
+    //   path: "/cow-helpine",
+    // },
   ];
 
   const forActivity = [
@@ -110,14 +110,14 @@ const NavBar = ({toggleSideNavBar}) => {
           Get Involved <img src={downArrow} alt="arrow"/>
           {isVisible2 && <Dropdown items={forActivity} isVisible={isVisible2}/>}
         </div>
-        <div
+        {/* <div
           className="forNavLink-2"
           onMouseEnter={() => handleMouseEnter(3)}
           onMouseLeave={() => handleMouseLeave(3)}
         >
           Projects <img src={downArrow} alt="arrow"/>
           {isVisible3 && <Dropdown items={forProjects} isVisible={isVisible3}/>}
-        </div>
+        </div> */}
         <div className="forNavLink-1">
           <NavLink to="/overview/contact-us" className="nav-link"> <span> Contact Us </span> </NavLink>
         </div>

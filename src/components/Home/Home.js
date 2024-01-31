@@ -37,7 +37,7 @@ const Home = () => {
             </div>
             <div className="card-heading"> Make Donation </div>
             <div className="card-subheading"> Help us by making a donation </div>
-            <div className="card-desc">Donate generously so we can take care of our animal friends through our various initiatives and rescues.</div>
+            <div className="card-desc">Donate generously so that we can take care of our gau matas through various initiatives and rescues.</div>
             <div className="card-button"><NavLink to="/involve/donate" ><button> Donate now </button></NavLink></div>
           </div>
         </div>
@@ -62,8 +62,8 @@ const Home = () => {
               </div>
             </div>
             <div className="card-heading"> Adopt </div>
-            <div className="card-subheading"> Take home a new family member </div>
-            <div className="card-desc">Nothing brings more joy and satisfaction than to provide a forever home to one of our little wards.</div>
+            <div className="card-subheading"> Take gaumata to your home </div>
+            <div className="card-desc">Adopt a cow, be a part of gau seva, and get a chance to earn punyas.</div>
             <div className="card-button"><NavLink to="/involve/adopt"><button> Adopt now </button></NavLink></div>
           </div>
         </div>

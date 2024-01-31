@@ -12,8 +12,10 @@ import AboutUs from './components/AboutUs/AboutUs.js';
 import Donate from './components/Involved/Donate.js';
 import Activities from './components/Activities/Activities.js';
 import SideNavBar from "./components/prev-SideNavBar/SideNavbar.js";
+import PaymentSuccess from './components/Involved/PaymentSuccess.js';
 
 const URL = `https://gaushala-backend.onrender.com/`;
+// const URL = `http://localhost:8008`;
 
 function App() {
   const [sideNavBarExpanded, setSideNavBarExpanded] = useState(false);
@@ -42,6 +44,7 @@ function App() {
           <Route path='/overview/contact-us' element={<ContactUs />} />
           <Route path='/overview/about-us' element={<AboutUs />} />
           <Route path='/overview/activity' element={<Activities />} />
+          <Route path='/paymentsuccess' element={<PaymentSuccess />} />
         </Routes>
       </div>
       </div>

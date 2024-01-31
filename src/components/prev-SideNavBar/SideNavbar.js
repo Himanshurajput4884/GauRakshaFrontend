@@ -46,14 +46,14 @@ const SideNavBar = ( {isExpanded, toggleSideNavBar} ) => {
       >
         <div className="nav-upper">
           <div className="nav-heading">
-            {/* {isExpanded && */}
+            {/* {isExpanded &&
              
               <div className="nav-brand">
-                {/* <img src="icons/Logo.svg" alt="" srcset="" /> */}
+                <img src="icons/Logo.svg" alt="" srcset="" />
                 <h4 style={{margin:"5px 5px", padding:"0px 15px"}}>Gau-Raksha</h4>
               </div>
             
-            {/* } */}
+            }  */}
             <button
               className={
                 // isExpanded

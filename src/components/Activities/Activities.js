@@ -3,6 +3,7 @@ import "./Activities.css";
 import axios from "axios";
 
 const URL = `https://gaushala-backend.onrender.com`;
+// const URL = `http://localhost:8008`;
 
 const Activities = () => {
     const [blogData, setBlogData] = useState([]);

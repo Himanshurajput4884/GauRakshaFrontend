@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./Donate.css";
 import {ToastContainer, toast} from "react-toastify";
 import axios from "axios";
+import Logo from "../../images/Cow_logo2.jpeg";
 const URL = `https://gaushala-backend.onrender.com`;
+// const URL = `http://localhost:8008`;
 
 const Donate = () => {
   const [formData, setFormData] = useState({
@@ -32,6 +34,8 @@ const Donate = () => {
         data: { key },
       } = await axios.get(`${URL}/payment/getkey`);
 
+      console.log(key);
+
       const {
         data: { order },
       } = await axios.post(`${URL}/payment/checkout`, {
@@ -43,15 +47,15 @@ const Donate = () => {
         key, 
         amount:order.amount,
         currency:"INR",
-        name:"Gaushala",
+        name:"33 Koti Devi Devta",
         description:"Now for testing",
-        image:"",
+        image:Logo,
         order_id:order.id,
         callback_url:`${URL}/payment/paymentverification`,
         prefill:{
-          name:"Himanshu",
-          email:"himanshu@example.com",
-          contact:"9090909090"
+          name:"",
+          email:"",
+          contact:""
         },
         notes:{
           "address":"Rozorpay Corporate Office"

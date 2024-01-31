@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../images/Cow_logo2.jpg";
+import logo from "../../images/Cow_logo2.jpeg";
 import Twitter from "../../images/Twitter_icon.png";
 import facebook_icon from "../../images/facebook1_icon.png";
 import Youtube_icon from "../../images/Youtube1_icon.png";
@@ -9,6 +9,7 @@ import PhoneIcon from "../../images/Phone1_icon.png";
 import GmailIcon from "../../images/Gmail1_icon.png";
 
 const URL = `https://gaushala-backend.onrender.com`;
+// const URL = `http://localhost:8008`;
 
 const Footer = () => {
   return (
@@ -32,11 +33,12 @@ const Footer = () => {
         <div className="footer-cont2">
             <div className="quick-links"> Quick-Links </div>
             <div className="actual-links">
-                <span> <a href="#">Donate</a> </span>
-                <span> <a href="#">Activity</a> </span>
-                <span> <a href="#">Adopt</a> </span>
-                <span> <a href="#">About-Us</a> </span>
-                <span> <a href="#">Link5</a> </span>
+                <span> <a href="/overview/activity">Activity</a> </span>
+                <span> <a href="/involve/donate">Donate</a> </span>
+                <span> <a href="/show/gallery">Gallery</a> </span>
+                <span> <a href="/involve/adopt">Adopt</a> </span>
+                <span> <a href="/overview/about-us">About-Us</a> </span>
+                <span> <a href="/overview/contact-us">Contact-Us</a> </span>
             </div>
         </div>
         <div className="footer-cont3">
