@@ -91,27 +91,27 @@ const Donate = () => {
             <div className="donate-choice-btns">
               <button
                 className="donate-amount-btn"
-                value={500}
+                value={11}
                 onClick={handleOnClick}
               >
                 {" "}
-                500{" "}
+                11{" "}
               </button>
               <button
                 className="donate-amount-btn"
-                value={1000}
+                value={21}
                 onClick={handleOnClick}
               >
                 {" "}
-                1000{" "}
+                21{" "}
               </button>
               <button
                 className="donate-amount-btn"
-                value={1500}
+                value={51}
                 onClick={handleOnClick}
               >
                 {" "}
-                1500{" "}
+                51{" "}
               </button>
             </div>
             <input
